@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0LS-JN-Umo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Child View Controller-->
+        <scene sceneID="XCV-Cj-RBM">
+            <objects>
+                <viewController id="0LS-JN-Umo" customClass="ChildViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U4I-qg-ROm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="god-Os-hk2">
+                                <rect key="frame" x="37" y="100" width="300" height="467"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USt-I9-U3a">
+                                        <rect key="frame" x="123" y="417" width="54" height="30"/>
+                                        <state key="normal" title="Dismiss"/>
+                                        <connections>
+                                            <action selector="dismiss:" destination="0LS-JN-Umo" eventType="touchUpInside" id="j4Z-0w-8oL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="USt-I9-U3a" firstAttribute="centerX" secondItem="god-Os-hk2" secondAttribute="centerX" id="YUh-zT-uut"/>
+                                    <constraint firstAttribute="bottom" secondItem="USt-I9-U3a" secondAttribute="bottom" constant="20" id="s4d-KQ-nd0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="god-Os-hk2" firstAttribute="width" secondItem="U4I-qg-ROm" secondAttribute="width" multiplier="0.8" id="8Hg-wd-H6r"/>
+                            <constraint firstItem="god-Os-hk2" firstAttribute="height" secondItem="U4I-qg-ROm" secondAttribute="height" multiplier="0.7" id="AFk-DY-VYC"/>
+                            <constraint firstItem="god-Os-hk2" firstAttribute="centerY" secondItem="U4I-qg-ROm" secondAttribute="centerY" id="HJm-mb-aTp"/>
+                            <constraint firstItem="god-Os-hk2" firstAttribute="centerX" secondItem="U4I-qg-ROm" secondAttribute="centerX" id="xuo-mj-Q2R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UFM-zh-dZr"/>
+                    </view>
+                    <connections>
+                        <outlet property="childContentView" destination="god-Os-hk2" id="vSO-RB-3am"/>
+                        <outlet property="widthConstraint" destination="8Hg-wd-H6r" id="ZtF-68-UYz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aqk-BR-9Cb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200.80000000000001" y="6.746626686656672"/>
+        </scene>
+    </scenes>
+</document>

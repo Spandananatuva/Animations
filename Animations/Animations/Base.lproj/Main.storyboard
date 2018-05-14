@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Itd-Vz-fDe">
+                                <rect key="frame" x="0.0" y="52" width="375" height="190"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtl-Wz-aTT">
+                                        <rect key="frame" x="150" y="0.0" width="75" height="30"/>
+                                        <state key="normal" title="Animation1"/>
+                                        <connections>
+                                            <action selector="buttonClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nXe-Ow-Cka"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uo0-Vj-q62">
+                                        <rect key="frame" x="148.5" y="40" width="78" height="30"/>
+                                        <state key="normal" title="Animation2"/>
+                                        <connections>
+                                            <action selector="buttonClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T3E-gq-r3T"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KO7-EU-EbH">
+                                        <rect key="frame" x="148.5" y="80" width="78" height="30"/>
+                                        <state key="normal" title="Animation3"/>
+                                        <connections>
+                                            <action selector="buttonClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U5G-Cb-XYP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="or5-Q5-FMK">
+                                        <rect key="frame" x="148.5" y="120" width="78" height="30"/>
+                                        <state key="normal" title="Animation4"/>
+                                        <connections>
+                                            <action selector="buttonClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2BA-vk-rg0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbc-sr-k3v">
+                                        <rect key="frame" x="148.5" y="160" width="78" height="30"/>
+                                        <state key="normal" title="Animation5"/>
+                                        <connections>
+                                            <action selector="buttonClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mjr-rj-viB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Itd-Vz-fDe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SI3-Dc-Tax"/>
+                            <constraint firstItem="Itd-Vz-fDe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="VbR-pD-aPg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Itd-Vz-fDe" secondAttribute="trailing" id="oq8-iY-Jxb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
